@@ -23,16 +23,21 @@ FULLNAME: RJ Franciz M. Mendoza
 
 DEGREE PROGRAM: BS Statistics
 
-LIVE WEBSITE LINK: 
+LIVE WEBSITE LINK: https://cmsc100-1s2526-ef2l.github.io/exercise-02-rmmendoza-stat/
 
 STEPS ON HOW TO CREATE GITHUB PAGE:
 - I used VS Code to write my .html and .css code
-- I watched a YT tutorials, as well as followed the instructions found in the Exercise 02 materials
-
+- I watched a YT tutorials
+- I utilized a li'l bit of help from copilot to assist me in positioning images
+- Once the .html and .css files were finished, I use GitBash to commit and push my changes in here
+- I followed the instructions found in the Exercise 02 materials, wherein I navigated my way all through to GitHub Pages in order to retreive theWebsite link
 
 KEY TAKEAWAYS FROM THIS EXERCISE:
+- possible to use GitHub to create website
+- web programming extract your creative juice
+- GitHub is a great repository
 
 ---------------------------------------------------
 [Q2] - Which repository should I use?
 ---------------------------------------------------
-- use the one provided by GitHub Classroom
+- I use the one provided by GitHub Classroom
