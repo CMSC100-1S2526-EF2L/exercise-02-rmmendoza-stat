@@ -1,91 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSC 100: Single-Page Static Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css"> <!--to link external .css file-->
+</head>
 
-<html>
-  <head>
-    <title>Website Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="flex.css" />
-  </head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>RJ's Single-Page Static Portfolio</h1>
+        <nav>
+            <a href="#featured">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#autobiography">About</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </header>
 
-  <body>
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> 
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> 
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
-    </div>
-    </nav>
+    <!-- Featured Photo -->
+    <section id="featured" class="featured-photo">
+        <h2>Featured Photo</h2>
+        <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/485358258_663732906176333_1224074669577025002_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=LiwcuR1srOIQ7kNvwENO-9G&_nc_oc=Adn015fO3sFqrhk5Jbf58Y1p7vgwQ_4bkBw-2AnJy1TXSXzIE2Slhay0L19qippRlUpl9KsveRufmQ4dwbR8Cpdw&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=EF36LxM9aUGrX30gTX2Pmg&oh=00_AfbPvp0DATfjWRk-4HEIMdef6ZTWHEXV9TMlKGQmG0FB7A&oe=68CB194D" 
+            alt="My Featured Photo">
+    </section>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
+    <!-- Previous Projects -->
+    <section id="projects" class="projects">
+        <div class="project-row">
+            <div class="project-col img-col">
+                <img src="Project-1_Periodic Table.jpg" alt="Project 1">
+            </div>
+            <div class="project-col desc-col">
+                <h3>Periodic Table of Elements</h3>
+                <p>Short description: An exercise from my CMSC 12, in which HTML and CSS were used 
+                    to create the Periodic Table of Elements with a fancy effects, such as changing colors when hovered over by mouse pointer.</p>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-  </body>
 
+        <div class="project-row">
+            <div class="project-col img-col">
+                <img src="Projecy-2_Automated COE.png" alt="Project 2">
+            </div>
+            <div class="project-col desc-col">
+                <h3>Automated COE</h3>
+                <p>Short description: This project was made during my OJT in PSA Laguna; it's an automated generator for Certificate of Employment, wherein MS Excel was used, 
+                    along its macro feature, to create a search engine that will look for employess. Afterwards, their
+                    COE will be generated upon clicking 'Print' button there.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills + Autobiography -->
+    <section class="skills-autobio">
+        <div id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Project Management</li>
+                <li>Team Leadership</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Proficient in Design Software, such as Adobe Creative Suite for Visual Creation</li>
+            </ul>
+            
+            <h2>Essential Soft Skills Include:</h2>
+            <ul>
+                <li>Creativity & Great Attention to Details</li>
+                <li>Effective Communication Skills</li>      
+                <li>Problem-solving Skills</li>
+                <li>Ability to Work Collaboratively</li>
+            </ul>
+        </div>
+        
+        <div id="autobiography" class="autobiography">
+            <h2>Autobiography</h2>
+            <li>Name: RJ Franciz M. Mendoza</li>
+            <li>Degree: Bachelor of Science in Computer Science</li>
+            <p>I am a graduate student from the University of the Philippines Los Baños. Throughout in my academic journey, I have developed a strong foundation in web development and project management. I am passionate about creating efficient and user-friendly web applications. Driven by my goal, I want to pursue a career in software development and project management, wherein I can continue learning and applying my skills and contribute my innovative ideas.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© CMSC 100 FIRST SEM A.Y. 2025-2026 (EF-2L)</p>
+        <p>Email: rmmendoza2@up.edu.ph  |  Facebook: RJ Franciz M. Mendoza</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+</body>
 </html>
