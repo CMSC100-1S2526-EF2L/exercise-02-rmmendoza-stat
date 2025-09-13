@@ -6,6 +6,7 @@ body {
   background-size: cover;
   color: black; /* optional: makes text white for readability */
 }
+
 /* this adds a semi-transparent overlay for readability */
 .featured-photo {
   position: relative;
@@ -26,6 +27,60 @@ body {
 .featured-photo img {
   position: relative;
   z-index: 1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-col {
+  flex: 1;
+}
+
+.project-row .img-col img {
+  max-width: 150px;   /* smaller than featured photo */
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.project-row .desc-col h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-row .desc-col p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive (for mobile screens) */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-row .img-col img {
+    max-width: 100%;
+  }
 }
 
 /* Navigation */
