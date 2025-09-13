@@ -20,9 +20,15 @@ Section: EF-2L
 [Q1] - What should you include in ReadMe.md?
 ---------------------------------------------------
 FULLNAME: RJ Franciz M. Mendoza
+
 DEGREE PROGRAM: BS Statistics
+
 LIVE WEBSITE LINK: 
+
 STEPS ON HOW TO CREATE GITHUB PAGE:
+- I used VS Code to write my .html and .css code
+- I watched a YT tutorials, as well as followed the instructions found in the Exercise 02 materials
+
 
 KEY TAKEAWAYS FROM THIS EXERCISE:
 
