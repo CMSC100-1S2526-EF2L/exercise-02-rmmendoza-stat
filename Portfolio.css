@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D") no-repeat center center fixed;
+  background-size: cover;
+  color: black; /* optional: makes text white for readability */
+}
+/* this adds a semi-transparent overlay for readability */
+.featured-photo {
+  position: relative;
+  color: white;
+  padding: 100px 20px;
+}
+
+.featured-photo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.featured-photo h2,
+.featured-photo img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header nav a {
+    color: yellow;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Featured Photo */
+.featured-photo {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.featured-photo img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Previous Projects */
+.projects {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f9f9f9;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+/* Skills and Autobiography side-by-side */
+.skills-autobio {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.skills, .autobiography {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer a {
+    color: rgb(251, 255, 0);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
