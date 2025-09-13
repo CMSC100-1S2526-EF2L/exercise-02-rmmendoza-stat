@@ -25,6 +25,9 @@ body {
 
 .featured-photo h2,
 .featured-photo img {
+  font-family: "Brush Script MT", cursive;
+  font-size: 3.5rem;
+  color: whitesmoke;
   position: relative;
   z-index: 1;
 }
@@ -52,8 +55,8 @@ body {
 }
 
 .project-row .img-col img {
-  max-width: 150px;   /* smaller than featured photo */
-  width: 60%;
+  max-width: 550px;   /* smaller than featured photo */
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
@@ -69,18 +72,6 @@ body {
   margin: 0;
   font-size: 1rem;
   color: #555;
-}
-
-/* Responsive (for mobile screens) */
-@media (max-width: 768px) {
-  .project-row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-row .img-col img {
-    max-width: 100%;
-  }
 }
 
 /* Navigation */
